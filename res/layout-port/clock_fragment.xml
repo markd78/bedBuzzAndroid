@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clockView"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_box" 
+    android:layout_marginTop = "40dp" android:layout_marginBottom = "40dp">
+
+     <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+        android:text=" "
+        style="@style/LargeWhitePortrait"   />
+    
+    <TextView
+        android:id="@+id/colon"
+        style="@style/LargeWhitePortrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/hourTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/colon"
+         android:layout_alignTop= "@+id/colon"
+        android:text="00"
+      style="@style/LargeWhitePortrait"   />
+
+    <TextView
+        android:id="@+id/minuteTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/colon"
+        android:layout_alignTop= "@+id/colon"
+        android:text="00"
+        style="@style/LargeWhitePortrait"   />
+	<TextView
+        android:id="@+id/amPMTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop= "@+id/minuteTxtView"
+        android:layout_toRightOf="@+id/minuteTxtView"
+         android:layout_marginTop = "20dp"
+        style="@style/MediumWhiteHorizontal"   />
+
+	<TextView
+	    android:id="@+id/dateTxtView"
+	    style="@style/MediumWhiteHorizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/hourTxtView"
+	    android:layout_below="@+id/hourTxtView"/>
+
+</RelativeLayout>

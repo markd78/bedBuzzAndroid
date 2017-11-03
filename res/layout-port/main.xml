@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout" >
+     
+     <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+    
+	<FrameLayout  
+	     android:layout_gravity="center"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginBottom="22dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="45dp">
+        <ImageView
+        android:id="@+id/batteryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/battery_charging"/>
+    <fragment
+        android:id="@+id/clockFrag"
+        android:name="com.comantis.bedBuzz.fragments.ClockFragment"
+       android:layout_width="match_parent"
+ 		android:layout_height="wrap_content"
+ 		android:layout_gravity="center"
+ 		 android:layout_marginBottom="50dp"
+        />
+
+    <fragment
+        android:id="@+id/weatherFrag"
+        android:name="com.comantis.bedBuzz.fragments.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="55dp"
+         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+        <!-- Preview: layout=@layout/weather_fragment -->
+    </fragment>
+
+	</FrameLayout>
+	
+	
+         <fragment
+            android:id="@+id/sendMessageQuestionWizardFrag"
+            android:name="com.comantis.bedBuzz.fragments.SendMessageQuestionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+	    <fragment
+            android:id="@+id/changeVoiceQuestionFrag"
+            android:name="com.comantis.bedBuzz.fragments.ChangeVoiceQuestionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+	    <fragment
+            android:id="@+id/subscribeQuestionFrag"
+            android:name="com.comantis.bedBuzz.fragments.SubscribeQuestionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+	    
+	     <fragment
+            android:id="@+id/reviewQuestionFrag"
+            android:name="com.comantis.bedBuzz.fragments.ReviewQuestionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+	     
+	     <com.tapfortap.AdView android:id="@+id/ad_view"
+                          android:layout_height="50dip"
+                          android:layout_width="fill_parent"
+                          android:layout_gravity="bottom"
+                          />
+	    
+</FrameLayout>

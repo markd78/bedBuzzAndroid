@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compose Message"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                     android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/target_friends_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MessageType"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioGroup
+                    android:id="@+id/messageTypeRdoGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/fromMicMessageTypeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/fromMic" />
+
+                    <RadioButton
+                        android:id="@+id/fromTTSMessageTypeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/textToSpeech" />
+                </RadioGroup>
+
+                <ViewFlipper
+                    android:id="@+id/messageTypeViewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/fromMicComposeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="207dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/recordBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true" android:focusableInTouchMode="true"
+                            android:text="Record" />
+
+                        <ProgressBar
+                            android:id="@+id/micLevelProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/recordBtn"
+                            android:layout_toRightOf="@+id/recordBtn" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/micLevelProgressBar"
+                            android:text="Displayed message  (shown when your message is played):" />
+
+                        <com.comantis.bedBuzz.utils.EditTextWithWordWrap
+                            android:id="@+id/displayedMessageTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/textView4"
+                            android:layout_weight="0.69"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:text="Good morning!"
+                            android:imeOptions="actionDone"
+                            android:maxLength="500" />
+
+                        <TextView
+                            android:id="@+id/micLevelLbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@+id/micLevelProgressBar"
+                            android:text="Mic Level:"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/recordingLbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/recordBtn"
+                            android:layout_alignLeft="@+id/micLevelProgressBar"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Recording Lbl"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ff0000" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textToSpeechComposeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wake Up Message"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <!--
+         <EditText
+        android:id="@+id/messageTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.69"
+        android:scrollHorizontally="false"  
+        android:singleLine="true"
+        android:gravity="top"
+        android:maxLength="500"
+            >
+                        -->
+
+                        <com.comantis.bedBuzz.utils.EditTextWithWordWrap
+                            android:id="@+id/messageTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.69"
+                            android:gravity="top"
+                            android:imeOptions="actionDone"
+                            android:maxLength="500" >
+
+                            <requestFocus />
+                        </com.comantis.bedBuzz.utils.EditTextWithWordWrap>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/infoTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Voice:"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <RadioGroup
+                                android:id="@+id/voicesRdoGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/usfemaleToggleBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="@string/usfemale" />
+
+                                <RadioButton
+                                    android:id="@+id/usmaleToggleBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/usmale" />
+
+                                <RadioButton
+                                    android:id="@+id/ukfemaleToggleBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/ukfemale" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                   
+                </ViewFlipper>
+            </LinearLayout>
+
+             <TextView
+                        android:id="@+id/infoTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your friends will hear the message read out loud when their alarm goes off in the morning."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/creditsLbls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messageCreditsLayout"
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sendMessageInfoLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Message Credits:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/messageCountLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/TestMessageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/SendMessageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</RelativeLayout>

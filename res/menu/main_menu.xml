@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_alarmMenuItem"
+          android:icon="@drawable/ic_bell"
+          android:title="@string/alarms"  
+          android:showAsAction="ifRoom|withText" />
+     <item android:id="@+id/voice"
+          android:icon="@drawable/voiceicon_40"
+          android:title="@string/changeVoice"  android:showAsAction="ifRoom|withText" />
+     <item android:id="@+id/sendMessage"
+          android:icon="@drawable/messages_40"
+          android:title="@string/sendMessage"  android:showAsAction="ifRoom|withText" />
+      <item android:id="@+id/rssFeedMenuChoice"
+          android:icon="@drawable/rss_256"
+          android:title="@string/RSSFeeds" android:showAsAction="ifRoom|withText"  />
+      <item android:id="@+id/settingMenuChoice"
+          android:icon="@drawable/gear_40"
+          android:title="@string/settings"  android:showAsAction="ifRoom|withText" />
+      <item android:id="@+id/themeMenuItem"
+          android:icon="@drawable/theme_40"
+          android:title="@string/changeTheme"  android:showAsAction="ifRoom|withText" />
+      <!-- <item android:id="@+id/subscribeMenuItem"
+          android:icon="@drawable/check_40"
+          android:title="@string/subscribe"  android:showAsAction="ifRoom|withText" /> -->
+</menu>

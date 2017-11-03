@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunrise2">
+
+    <ViewFlipper
+        android:id="@+id/welcomeWizardFlipper"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+       
+         >
+
+         <fragment
+            android:id="@+id/welcome1Frag"
+            android:name="com.comantis.bedBuzz.fragments.Welcome1Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+        
+        <fragment
+            android:id="@+id/welcomeEnterNameFrag"
+            android:name="com.comantis.bedBuzz.fragments.WelcomeEnterNameFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" 
+            android:layout_gravity="center"/>
+        
+        <fragment
+            android:id="@+id/welcomeEnableFacebookFrag"
+            android:name="com.comantis.bedBuzz.fragments.WelcomeEnableFacebookFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" 
+           android:layout_gravity="center"/>
+
+       
+
+    </ViewFlipper>
+
+</RelativeLayout>

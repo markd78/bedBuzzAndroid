@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<codes>
+	<condition>
+		<code>395</code>
+		<description>Stormy.  Moderate or heavy snow in the area with thunder</description>
+		<day_icon>weather_snowwithstorm</day_icon>
+		<night_icon>weather_snowwithstorm</night_icon>
+		<sound>moderateOrHeavySnowWithThunder</sound>
+	</condition>
+	<condition>
+		<code>392</code>
+		<description>Stormy.  Patchy light snow in the area with thunder</description>
+		<day_icon>weather_snowwithstorm</day_icon>
+		<night_icon>weather_snowwithstorm</night_icon>
+		<sound>patchyLightSnowInAreaWithThunder</sound>
+	</condition>
+	<condition>
+		<code>389</code>
+		<description>Stormy.  Moderate or heavy rain in the area with thunder</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+	</condition>
+	<condition>
+		<code>386</code>
+		<description>Stormy.  Patchy light rain in the area with thunder</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>patchyLightRainInAreaWithThunder</sound>
+	</condition>
+	<condition>
+		<code>377</code>
+		<description>Moderate or heavy showers of freezing rain</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>moderateOrHeavyShowersOfFreezingRain</sound>
+	</condition>
+	<condition>
+		<code>374</code>
+		<description>Light showers of freezing rain</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>lightShowersOfFreezingRain</sound>
+	</condition>
+	<condition>
+		<code>371</code>
+		<description>Moderate or heavy snow showers</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>moderateOrHeavySnowShowers</sound>
+	</condition>
+	<condition>
+		<code>368</code>
+		<description>Light snow showers</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>lightSnowShowers</sound>
+	</condition>
+	<condition>
+		<code>365</code>
+		<description>Moderate or heavy sleet showers</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>moderateOrHeavySleetShowers</sound>
+	</condition>
+	<condition>
+		<code>362</code>
+		<description>Light sleet showers</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>lightSleetShowers</sound>
+	</condition>
+	<condition>
+		<code>359</code>
+		<description>Torrential rain showers</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>torrentialRainShowers</sound>
+	</condition>
+	<condition>
+		<code>356</code>
+		<description>Moderate or heavy rain showers</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>moderateOrHeavyRainShowers</sound>
+	</condition>
+	<condition>
+		<code>353</code>
+		<description>Light rain showers</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>lightRainShowers</sound>
+	</condition>
+	<condition>
+		<code>350</code>
+		<description>Freezing rain</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>freezingRain</sound>
+	</condition>
+	<condition>
+		<code>338</code>
+		<description>Heavy snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>heavySnow</sound>
+	</condition>
+	<condition>
+		<code>335</code>
+		<description>Patchy heavy snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>patchyHeavySnow</sound>
+	</condition>
+	<condition>
+		<code>332</code>
+		<description>Moderate snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>moderateSnow</sound>
+	</condition>
+	<condition>
+		<code>329</code>
+		<description>Patchy moderate snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>patchyModerateSnow</sound>
+	</condition>
+	<condition>
+		<code>326</code>
+		<description>Light snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>lightSnow</sound>
+	</condition>
+	<condition>
+		<code>323</code>
+		<description>Patchy light snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>patchyLightSnow</sound>
+	</condition>
+	<condition>
+		<code>320</code>
+		<description>Moderate or heavy sleet</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>moderateOrHeavySleet</sound>
+	</condition>
+	<condition>
+		<code>317</code>
+		<description>Light sleet</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>lightSleet</sound>
+	</condition>
+	<condition>
+		<code>314</code>
+		<description>Moderate or Heavy freezing rain</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>moderateOrHeavyFreezingRain</sound>
+	</condition>
+	<condition>
+		<code>311</code>
+		<description>Light freezing rain</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>lightFreezingRain</sound>
+	</condition>
+	<condition>
+		<code>308</code>
+		<description>Heavy rain</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>heavyRain</sound>
+	</condition>
+	<condition>
+		<code>305</code>
+		<description>Heavy rain at times</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>heavyRainAtTimes</sound>
+	</condition>
+	<condition>
+		<code>302</code>
+		<description>Moderate rain</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>moderateRain</sound>
+	</condition>
+	<condition>
+		<code>299</code>
+		<description>Moderate rain at times</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>moderateRainAtTimes</sound>
+	</condition>
+	<condition>
+		<code>296</code>
+		<description>Light rain</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>lightRain</sound>
+	</condition>
+	<condition>
+		<code>293</code>
+		<description>Patchy light rain</description>
+		<day_icon>weather_rainshowerswithsun</day_icon>
+		<night_icon>weather_partlyrainywithmoon</night_icon>
+		<sound>patchyLightRain</sound>
+	</condition>
+	<condition>
+		<code>284</code>
+		<description>Heavy freezing drizzle</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>heavyFreezingDrizzle</sound>
+	</condition>
+	<condition>
+		<code>281</code>
+		<description>Freezing drizzle</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>freezingDrizzle</sound>
+	</condition>
+	<condition>
+		<code>266</code>
+		<description>Light drizzle</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>lightDrizzle</sound>
+	</condition>
+	<condition>
+		<code>263</code>
+		<description>Patchy light drizzle</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>patchyLightDrizzle</sound>
+	</condition>
+	<condition>
+		<code>260</code>
+		<description>Freezing fog</description>
+		<day_icon>weather_fog</day_icon>
+		<night_icon>weather_fog</night_icon>
+		<sound>freezingFog</sound>
+	</condition>
+	<condition>
+		<code>248</code>
+		<description>Foggy</description>
+		<day_icon>weather_fog</day_icon>
+		<night_icon>weather_fog</night_icon>
+		<sound>foggy</sound>
+	</condition>
+	<condition>
+		<code>230</code>
+		<description>Blizzards</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>blizzards</sound>
+	</condition>
+	<condition>
+		<code>227</code>
+		<description>Blowing snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>blowingSnow</sound>
+	</condition>
+	<condition>
+		<code>200</code>
+		<description>Thundery showers nearby</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderyShowersNearby</sound>
+	</condition>
+	<condition>
+		<code>185</code>
+		<description>Patchy freezing drizzle nearby</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>patchyFreezingDrizzleNearbypatchyFreezingDrizzleNearby</sound>
+	</condition>
+	<condition>
+		<code>182</code>
+		<description>Patchy sleet nearby</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>patchySleetNearby</sound>
+	</condition>
+	<condition>
+		<code>179</code>
+		<description>Patchy snow nearby</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>patchySnowNearby</sound>
+	</condition>
+	<condition>
+		<code>176</code>
+		<description>Patchy rain nearby</description>
+		<day_icon>weather_rainshowerswithsun</day_icon>
+		<night_icon>weather_partlyrainywithmoon</night_icon>
+		<sound>patchyRainNearby</sound>
+	</condition>
+	<condition>
+		<code>143</code>
+		<description>Misty</description>
+		<day_icon>weather_mist</day_icon>
+		<night_icon>weather_mist</night_icon>
+		<sound>misty</sound>
+	</condition>
+	<condition>
+		<code>122</code>
+		<description>Overcast</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>overcast</sound>
+	</condition>
+	<condition>
+		<code>119</code>
+		<description>Cloudy</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>cloudy</sound>
+	</condition>
+	<condition>
+		<code>116</code>
+		<description>Partly Cloudy</description>
+		<day_icon>weather_partlycloudywithsun</day_icon>
+		<night_icon>weather_partlycloudywithmoon</night_icon>
+		<sound>partlyCloudy</sound>
+	</condition>
+	<condition>
+		<code>113</code>
+		<description>Sunny</description>
+		<day_icon>weather_sunny</day_icon>
+		<night_icon>weather_moon</night_icon>
+		<sound>sunny</sound>
+	</condition>
+	<condition>
+		<code>1000</code>
+		<description>Hail</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>hail</sound>
+	</condition>
+	<condition>
+		<code>1001</code>
+		<description>Smoke</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>smoke</sound>
+	</condition>
+	<condition>
+		<code>1002</code>
+		<description>Volcanic Ash</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>volcanicAsh</sound>
+	</condition>
+	<condition>
+		<code>1003</code>
+		<description>Widespread Dust</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>widespreadDust</sound>
+	</condition>
+	<condition>
+		<code>1004</code>
+		<description>Sand</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>sand</sound>
+	</condition>
+	<condition>
+		<code>1005</code>
+		<description>Haze</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>haze</sound>
+	</condition>
+	<condition>
+		<code>1006</code>
+		<description>Spray</description>
+		<day_icon>weather_rainy</day_icon>
+		<night_icon>weather_rainy</night_icon>
+		<sound>spray</sound>
+	</condition>
+	<condition>
+		<code>1007</code>
+		<description>Dust Whirls</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>dustWhirls</sound>
+	</condition>
+	<condition>
+		<code>1008</code>
+		<description>Sandstorm</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>sandstorm</sound>
+	</condition>
+	<condition>
+		<code>1009</code>
+		<description>Low Drifting Snow</description>
+		<day_icon>weather_snowy</day_icon>
+		<night_icon>weather_snowy</night_icon>
+		<sound>lowDriftingSnow</sound>
+	</condition>
+	<condition>
+		<code>1010</code>
+		<description>Low Drifting Widespread Dust</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>lowDriftingWidespreadDust</sound>
+	</condition>
+	<condition>
+		<code>1011</code>
+		<description>Low Drifting Sand</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>lowDriftingSand</sound>
+	</condition>
+	<condition>
+		<code>1012</code>
+		<description>Blowing Widespread Dust</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>blowingWidespreadDust</sound>
+	</condition>
+	<condition>
+		<code>1013</code>
+		<description>Blowing Sand</description>
+		<day_icon>weather_cloudy</day_icon>
+		<night_icon>weather_cloudy</night_icon>
+		<sound>blowingSand</sound>
+	</condition>
+	<condition>
+		<code>1014</code>
+		<description>Ice Pellet Showers</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>icePelletShowers</sound>
+	</condition>
+	<condition>
+		<code>1015</code>
+		<description>Hail Showers</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>hailShowers</sound>
+	</condition>
+	<condition>
+		<code>1016</code>
+		<description>Small Hail Showers</description>
+		<day_icon>weather_sleet</day_icon>
+		<night_icon>weather_sleet</night_icon>
+		<sound>smallHailShowers</sound>
+	</condition>
+	<condition>
+		<code>1017</code>
+		<description>Thunderstorms and Rain</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderstormsAndRain</sound>
+	</condition>
+	<condition>
+		<code>1018</code>
+		<description>Thunderstorms and Ice Pellets</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderstormsAndIcePellets</sound>
+	</condition>
+	<condition>
+		<code>1019</code>
+		<description>Thunderstorms with Hail</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderstormsWithHail</sound>
+	</condition>
+	<condition>
+		<code>1020</code>
+		<description>Thunderstorms with Small Hail</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderstormsWithHail</sound>
+	</condition>
+	<condition>
+		<code>1021</code>
+		<description>Thunderstorms</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>thunderstorms</sound>
+	</condition>
+	<condition>
+		<code>1020</code>
+		<description>Freezing Rain</description>
+		<day_icon>weather_stormy_with_rain</day_icon>
+		<night_icon>weather_stormy_with_rain</night_icon>
+		<sound>freezingRain</sound>
+	</condition>
+	<condition>
+		<code>1022</code>
+		<description>Scattered Clouds</description>
+		<day_icon>weather_partlycloudywithsun</day_icon>
+		<night_icon>weather_partlycloudywithmoon</night_icon>
+		<sound>scatteredClouds</sound>
+	</condition>
+</codes>

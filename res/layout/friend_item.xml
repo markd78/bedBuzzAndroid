@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   > 
+
+    <ImageView
+        android:id="@+id/friendPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+	<TextView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/friendName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@+id/friendPic"
+	    android:text="Name"
+	    android:textSize="16sp" />
+
+	<CheckBox
+	    android:id="@+id/targetChk"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:focusable="false"
+		android:focusableInTouchMode="false"
+	     />
+	
+</RelativeLayout>

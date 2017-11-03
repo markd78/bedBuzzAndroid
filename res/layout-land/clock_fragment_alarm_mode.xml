@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clockView"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_box" >
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop = "20dp"
+        android:text=":"
+        style="@style/MediumWhiteHorizontal"   />
+
+    <TextView
+        android:id="@+id/hourTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "20dp"
+        android:layout_toLeftOf="@+id/colon"
+        android:text="00"
+      style="@style/MediumWhiteHorizontal"   />
+
+    <TextView
+        android:id="@+id/minuteTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "20dp"
+        android:layout_toRightOf="@+id/colon"
+        android:text="00"
+        style="@style/MediumWhiteHorizontal"   />
+	<TextView
+        android:id="@+id/amPMTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop = "20dp"
+        android:layout_alignTop= "@+id/minuteTxtView"
+        android:layout_toRightOf="@+id/minuteTxtView"
+        style="@style/SmallWhiteHorizontal"   />
+
+	<TextView
+	    android:id="@+id/dateTxtView"
+	    style="@style/SmallWhiteHorizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/hourTxtView"
+	    android:layout_below="@+id/hourTxtView"
+	     android:layout_marginTop = "5dp"/>
+
+</RelativeLayout>

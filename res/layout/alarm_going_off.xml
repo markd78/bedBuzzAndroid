@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sunrise2"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/clockFrag"
+        android:name="com.comantis.bedBuzz.fragments.ClockFragment"
+        android:layout_width="200dp"
+        android:layout_height="146dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weatherFrag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextView01"
+        android:text="SNOOZE" />
+
+    <fragment
+        android:id="@+id/weatherFrag"
+        android:name="com.comantis.bedBuzz.fragments.WeatherFragment"
+        android:layout_width="200dp"
+        android:layout_height="146dp"
+        android:layout_above="@+id/clockFrag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:thumb="@drawable/sunny_thumb_9" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar1"
+        android:text="Sleepy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBar1"
+        android:text="Awake"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

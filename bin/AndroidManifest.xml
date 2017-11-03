@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="internalOnly"
+    package="com.comantis.bedBuzz"
+    android:versionCode="8"
+    android:versionName="1.2.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+   <!--  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" /> 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+	<supports-screens
+	    android:xlargeScreens="false"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:anyDensity="true" 
+    />
+	
+	 <compatible-screens>
+       
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        
+        
+        <!-- all large size screens -->
+        <screen android:screenSize="large" android:screenDensity="ldpi" />
+        <screen android:screenSize="large" android:screenDensity="mdpi" />
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+    </compatible-screens>
+	
+    <uses-sdk android:targetSdkVersion="14" android:minSdkVersion="8"  />
+	
+   <!--  <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" > -->
+        <application
+        android:icon="@drawable/bedbuzz_114_nobackground"
+        android:label="@string/app_name" >
+        <activity android:name=".activities.BedBuzzAndroidActivity" android:launchMode="singleTop"  android:hardwareAccelerated="false" >
+        </activity>
+        <activity
+            android:name=".activities.Welcome_FirstScreenActivityWithWizard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tapfortap.TapForTapActivity"/>
+        <activity android:name="com.comantis.bedBuzz.activities.Welcome_EnterNameActivity" />
+        <activity android:name="com.comantis.bedBuzz.activities.Welcome_EnableFacebook" />
+        <activity android:name="com.comantis.bedBuzz.activities.ThemePickerActivity" />
+        <activity android:name="com.comantis.bedBuzz.activities.AlarmListView" />
+        <activity android:name="com.comantis.bedBuzz.activities.AlarmDetailView" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.comantis.bedBuzz.activities.RSSListActivity" />
+        <activity android:name="com.comantis.bedBuzz.activities.RSSDetailView" />
+        <activity android:name="com.comantis.bedBuzz.activities.AlarmGoingOff"/>
+        <activity android:name="com.comantis.bedBuzz.activities.SelectFriendsActivity" />
+        <activity android:name="com.comantis.bedBuzz.activities.ComposeMessageActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.comantis.bedBuzz.activities.VoicePickerActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.comantis.bedBuzz.activities.SettingsActivity"  android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.comantis.bedBuzz.activities.SubscribeScreenActivity" />
+        <activity android:name="com.comantis.bedBuzz.activities.BuyorSubscribeActivity" />
+
+        <receiver android:name="com.comantis.bedBuzz.managers.WeatherManager" >
+            <intent-filter>
+                <action android:name="com.comantis.bedBuzz.LocationUpdated" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.comantis.bedBuzz.services.BedBuzzAlarmService" />
+        <service android:name="com.comantis.bedBuzz.services.BillingService" />
+
+        <receiver android:name="com.comantis.bedBuzz.services.BillingReceiver" >
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.comantis.bedBuzz.services.AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

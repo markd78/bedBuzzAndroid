@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/clockView"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:layout_centerHorizontal="true"
+ android:layout_centerInParent="true"
+>
+
+    <LinearLayout
+         android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true" >
+
+          <TextView
+        android:id="@+id/hourTxtView"
+        style="@style/MediumVerticalGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00" />
+
+          <TextView
+              android:id="@+id/colon"
+              style="@style/MediumVerticalGreen"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+               android:layout_marginBottom = "20dp"
+              android:text=":"
+              android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/minuteTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+         style="@style/MediumVerticalGreen" />
+    <TextView
+        android:id="@+id/amPMTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SmallVerticalGreen"   />
+
+    
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/dateTxtView"
+        style="@style/SmallVerticalGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/timeView"
+        android:layout_below="@+id/timeView"
+         android:layout_marginTop = "20dp" />
+</RelativeLayout>

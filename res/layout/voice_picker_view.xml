@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<ScrollView   android:id="@+id/scroll" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  android:layout_above="@+id/buttonBarVoicePicker">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+
+   
+
+    <EditText
+        android:id="@+id/nameInVoiceMenuTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:inputType="text"
+        android:maxLength="120" />
+
+    <TextView
+        android:id="@+id/additionalMessageLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameInVoiceMenuTxt"
+        android:text="Additional Message:" />
+
+    <EditText
+        android:id="@+id/additionalMessageInVoiceMenuTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/additionalMessageLbl"
+        android:inputType="text"
+        android:maxLength="320" />
+
+    <TextView
+        android:id="@+id/infoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/additionalMessageInVoiceMenuTxt"
+        android:text="Voice:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioGroup
+        android:id="@+id/voicesRdoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoTxt"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/usfemaleToggleInVoiceMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/usfemale" />
+
+        <RadioButton
+            android:id="@+id/usmaleToggleInVoiceMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/usmale" />
+
+        <RadioButton
+            android:id="@+id/ukfemaleToggleInVoiceMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ukfemale" />
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/plzWaitSpinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voicesRdoGroup"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/plzWaitLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/plzWaitSpinner"
+       android:layout_below="@+id/voicesRdoGroup"
+        android:text="@string/generatingPlzWait"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     
+    
+</RelativeLayout>
+
+</ScrollView>
+<LinearLayout
+        android:id="@+id/buttonBarVoicePicker"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/TestVoiceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/SaveVoiceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/save" />
+    </LinearLayout>
+</RelativeLayout>

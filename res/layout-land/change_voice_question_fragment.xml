@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="220dp"
+    android:background="@drawable/rounded_corner_wizard_darker"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/iconcropped114" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="BedBuzz comes with multiple voice options!  Do you want to try changing my voice now?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	 <LinearLayout
+	     style="@android:style/ButtonBar"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignLeft="@+id/imageView1"
+	     android:layout_alignParentBottom="true"
+	     android:orientation="horizontal" >
+
+	     <Button
+	         android:id="@+id/yesChangeVoiceBtn"
+	         android:layout_width="190dp"
+	         android:layout_height="wrap_content"
+	         android:focusable="true"
+	         android:text="@string/yes" />
+
+	     <Button
+	         android:id="@+id/noChangeVoiceBtn"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_weight="1"
+	         android:focusable="true"
+	         android:text="@string/notNow" />
+	 </LinearLayout>
+
+</RelativeLayout>

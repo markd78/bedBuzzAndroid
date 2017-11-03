@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/alarmNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:text="Alarm Name" />
+
+    <ToggleButton
+        android:id="@+id/alarmEnableToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_below="@+id/alarmNameLbl"
+         android:focusable="false"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/alarmTimeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/alarmNameLbl"
+        android:layout_alignLeft="@+id/alarmNameLbl"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/mondayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alarmNameLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+        android:text="M" />
+   
+     <TextView
+        android:id="@+id/tuesdayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mondayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="Tu" />
+     
+      <TextView
+        android:id="@+id/wednesdayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tuesdayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="W" />
+      
+       <TextView
+        android:id="@+id/thursdayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/wednesdayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="Th" />
+       
+        <TextView
+        android:id="@+id/fridayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thursdayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="F" />
+        
+         <TextView
+        android:id="@+id/saturdayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fridayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="Sa" />
+         
+          <TextView
+        android:id="@+id/sundayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/saturdayLbl"
+        android:layout_below="@+id/alarmTimeLbl"
+         android:layout_marginLeft="5dp"
+        android:text="Su" />
+    
+    </RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feed_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/feedNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/feedURLLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedNameTxt"
+        android:text="@string/feed_URL"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/feedURLTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/feedURLLbl"
+        android:inputType="text" />
+
+    <LinearLayout
+         android:id="@+id/btnBar"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/CancelSaveFeedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/TestFeedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/SaveFeedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/save" />
+    </LinearLayout>
+    
+    <RadioGroup android:id="@+id/voicesRdoGroup"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:orientation="vertical"
+                 android:layout_below="@+id/feedURLTxt">
+         <RadioButton
+             android:id="@+id/usfemaleToggleInFeedBtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:checked="true"
+             android:text="@string/usfemale"  />
+
+
+         <RadioButton
+             android:id="@+id/usmaleToggleInFeedBtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="@string/usmale" />
+
+         <RadioButton
+             android:id="@+id/ukfemaleToggleInFeedBtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="@string/ukfemale" />
+         </RadioGroup>
+         
+     <ProgressBar
+        android:id="@+id/plzWaitSpinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBar"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/plzWaitLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/plzWaitSpinner"
+        android:layout_above="@+id/btnBar"
+        android:text="@string/generatingPlzWait"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+</RelativeLayout>

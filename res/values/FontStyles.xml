@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="LargeWhiteHorizontal" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+     <style name="LargeWhitePortrait" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+     
+     <style name="MediumWhiteHorizontal" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+     <style name="WeatherWhitePortrait" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">55sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+     
+     <style name="SmallWhiteHorizontal" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+     
+     <style name="LargeHorizontalGreen" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#91B49C</item>
+        <item name="android:textSize">160sp</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+     
+      <style name="MediumHorizontalGreen" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#91B49C</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+      <style name="MediumVerticalGreen" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#91B49C</item>
+        <item name="android:textSize">120sp</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+      <style name="SmallVerticalGreen" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#91B49C</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+</resources>

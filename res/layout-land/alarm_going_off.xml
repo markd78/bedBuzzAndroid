@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sunrise2"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/clockFrag"
+        android:name="com.comantis.bedBuzz.fragments.ClockFragment"
+        android:layout_width="200dp"
+        android:layout_height="146dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp" />
+
+    <fragment
+        android:id="@+id/weatherFrag"
+        android:name="com.comantis.bedBuzz.fragments.WeatherFragment"
+        android:layout_width="200dp"
+        android:layout_height="146dp"
+        android:layout_above="@+id/clockFrag"
+        android:layout_alignLeft="@+id/clockFrag"
+        android:layout_alignParentTop="true" />
+    
+    
+
+    <Button
+        android:id="@+id/snoozeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/weatherFrag"
+        android:layout_toLeftOf="@+id/clockFrag"
+        android:text="SNOOZE" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:thumb="@drawable/sunny_thumb_9" />
+
+    <ImageView
+        android:id="@+id/rightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/snoozeBtn"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:src="@drawable/arrow_right_green_48" />
+
+    <TextView
+        android:id="@+id/textViewAwake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_below="@+id/seekBar1"
+        android:text="Awake"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAwake"
+        android:layout_alignBottom="@+id/textViewAwake"
+        android:layout_alignRight="@+id/seekBar1"
+        android:text="Sleepy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+
+</RelativeLayout>
+
+<fragment
+    android:id="@+id/newsFrag"
+    android:name="com.comantis.bedBuzz.fragments.NewsFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+
+
+<fragment
+    android:id="@+id/messageFrag"
+    android:name="com.comantis.bedBuzz.fragments.MessageViewFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+</FrameLayout>
